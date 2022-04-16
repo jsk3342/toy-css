@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  display: flex;
+  height: 100vh;
+}
+.container {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  width: 800px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #999;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  margin: 0 -40px;
+  position: relative;
+}
+
+.circle::before {
+  content: " ";
+  border-radius: 50%;
+  border: 20px solid black;
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
